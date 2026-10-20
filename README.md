@@ -10,6 +10,17 @@
 
 ## 1. 快速上手
 
+### Cloudflare Pages 发布
+
+GitHub 仓库：`linshiyou23/wealth-manager-game`。连接 `main` 分支后，每次推送自动构建部署。
+
+- 根目录：仓库根目录（留空）
+- 构建命令：`npm run build`
+- 输出目录：`packages/ui/dist`
+- Node.js：22（由 `.node-version` 固定）
+
+2026-10-20：恢复 GitHub 完整项目到本地，固定 UI 的 Vite 版本并同步锁文件，配置 Cloudflare Pages。浏览器版存档保存在各自浏览器的 localStorage，换设备或清理站点数据不会自动同步存档。
+
 ```bash
 npm install        # 安装依赖（npm workspaces，一次装全五个包）
 npm run dev        # 启动游戏 http://localhost:5173（Vite dev server）
